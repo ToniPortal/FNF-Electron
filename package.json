@@ -1,0 +1,28 @@
+{
+  "name": "fnf-electron",
+  "version": "1.0.0",
+  "description": "Friday night funkin launcher electron",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron .",
+    "start": "electron .",
+    "electron": "ng build --base-href ./ && electron ."
+  },
+  "keywords": [
+    "electron",
+    "fnf",
+    "fridaynightfunkinelectron",
+    "fridaynightfunkin",
+    "fnfe"
+  ],
+  "author": "ToniPortal",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^21.2.2"
+  },
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "path": "^0.12.7",
+    "systemjs": "^6.13.0"
+  }
+}

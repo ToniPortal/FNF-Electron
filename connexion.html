@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="refresh" content="5;url=home.html" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNF Electron 1.0</title>
+</head>
+
+<body>
+
+    <button id="createbtn">Create New Account</button>
+
+    <div class="login">
+        <h1>Login</h1>
+        <button id="change">Mail ou Pseudonyme</button>
+        <form id="formauth" method="post">
+
+            <div id="emaildiv" style="display: none;">
+                <input type="text" name="email" placeholder="Email" id="email">
+
+            </div>
+
+            <div id="usernamediv">
+                <input type="text" name="username" placeholder="Pseudonyme" id="username">
+            </div>
+
+
+            <input type="password" name="password" placeholder="Mot de passe" id="password" required>
+            <input id="btnlog" type="submit" value="Login">
+        </form>
+    </div>
+
+    <script src="./node_modules/systemjs/dist/system.js"></script>
+    <script type="systemjs-module" src="./js/main.js"></script>
+
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

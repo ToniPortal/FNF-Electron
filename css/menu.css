@@ -1,0 +1,87 @@
+
+input{
+    margin-left: 15px;
+}
+
+.dropdown img{  
+    margin-top: 6px;
+    margin-left: 7px;
+    z-index: 10;
+    position: fixed;
+    width: 25px;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.textBox {
+    color: #fff;
+    font-size: 15px;
+}
+
+.dropdown {
+    z-index: 1;
+    margin-top: -23px;
+    position: relative;
+    width: 115px;
+    height: 14px;
+}
+
+.img-drop img{
+    width: 15px;
+}
+
+.dropdown input {
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #222;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+}
+
+.dropdown .option {
+    position: absolute;
+    top: 39px;
+    width: 90px;
+    background: #222;
+    overflow: hidden;
+    display: none;
+    
+}
+
+.dropdown.active .option{
+    display: block;
+}
+
+.dropdown .option div {
+    height: 63px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.dropdown .option div:hover {
+    background: rgb(44, 44, 44);
+    color: black;
+}
+
+.dropdown .option div ion-icon {
+    position: relative;
+    padding: 15px;
+    font-size: 50px;
+}
+
+#deco:hover{
+    color: red;
+    background-color: rgb(30, 30, 30);
+}
