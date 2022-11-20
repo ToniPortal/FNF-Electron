@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
+  /*
     const replaceText = (selector, text) => {
       const element = document.getElementById(selector)
       if (element) element.innerText = text
@@ -22,7 +23,29 @@ window.addEventListener('DOMContentLoaded', () => {
       ipc.send('verifco');
 
     });
+    */
+   
+    //https://stackoverflow.com/questions/34328961/importing-node-modules-with-electron-and-systemjs
+    try {
+    var node_modules = ["child_process", "fs"];
+    var fetch = System.fetch;
+    window.remote = require("remote");
+    System.fetch = function () {
+        var promise = fetch.apply(System, arguments);
+        return promise.then(function (js) {
+            for (var m of node_modules) {
+                var requireExpression = 'require("' + m + '");';
+                var remoteRequire = 'remote.require("' + m + '");'
+                js = js.replace(requireExpression, remoteRequire);
+            }
+            return js;
+        });
+    }
+    System.import("electron");
+  } catch(err){
+    console.log("Preload error");
+  }
 
-  })
+})
 
 

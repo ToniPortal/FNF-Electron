@@ -11,16 +11,14 @@
 
 <body>
 
-    <button id="createbtn">Create New Account</button>
+    <button id="createbtn">Retour sur la page de login</button>
 
     <div class="login">
         <h1>CREATE</h1>
-        <button id="change">Mail ou Pseudonyme</button>
         <form id="formauth" method="post">
 
             <div id="emaildiv" style="display: none;">
                 <input type="text" name="email" placeholder="Email" id="email">
-
             </div>
 
             <div id="usernamediv">
@@ -34,10 +32,9 @@
     </div>
 
     <script src="./node_modules/systemjs/dist/system.js"></script>
-    <script type="systemjs-module" src="./js/main.js"></script>
+    <script type="systemjs-module" src="./js/create.js"></script>
 
-    <script src="js/menu.js"></script>
-
+    <span id="err">Info</span>
 </body>
 
 </html>

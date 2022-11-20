@@ -18,11 +18,14 @@
   "author": "ToniPortal",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^21.2.2"
+    "electron": "^21.2.2",
+    "electron-packager": "^17.1.1"
   },
   "dependencies": {
     "mysql": "^2.18.1",
     "path": "^0.12.7",
-    "systemjs": "^6.13.0"
+    "sol-parser": "^1.0.2",
+    "systemjs": "^6.13.0",
+    "util": "^0.12.5"
   }
 }
