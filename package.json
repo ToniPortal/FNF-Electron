@@ -6,7 +6,8 @@
   "scripts": {
     "test": "electron .",
     "start": "electron .",
-    "electron": "ng build --base-href ./ && electron ."
+    "electron": "ng build --base-href ./ && electron .",
+    "build": "electron-packager ./ FNF-Electron --platform=win32 --arch=x64"
   },
   "keywords": [
     "electron",
