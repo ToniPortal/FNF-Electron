@@ -3,9 +3,16 @@ var wantscoreorweek = 0;
 
 window.onload = async function () {
     console.log("loaded")
+    const ipcRenderer = require('electron').ipcRenderer;
+
+    const basepath = document.getElementById("basepath");
+    var sendbase = await ipcRenderer.sendSync('basepath');
+
+    basepath.innerText = sendbase;
 
     try {
-        const response = await fetch('./data/listgame.json');
+        const basepath = await document.getElementById("basepath").innerText;
+        const response = await fetch(`${basepath}/data/listgame.json`);
         const list = await response.json();
 
         var longlist = Object.keys(list.allgame).length
@@ -26,14 +33,18 @@ window.onload = async function () {
         creertable()
     }
 
+
     document.getElementById("delall").addEventListener("click", function () {
-        const ipcRenderer = require('electron').ipcRenderer;
         console.log("delall")
         ipcRenderer.send('deleteall');
     });
 
 
+
+
 }
+
+
 
 var arraybtn = [];
 
@@ -43,11 +54,12 @@ var solotest = 0
 async function readscoreweek(name) {
     console.log("name: " + name)
     const table = document.createElement("table");
+    const basepath = document.getElementById("basepath").innerText;
     try {
-        const week = await fetch(`./data/weekscore.json`);
+        const week = await fetch(`${basepath}/data/weekscore.json`);
         const weekjson = await (week.json());
         //console.log(weekjson.h)
-        const song = await fetch(`./data/songscore.json`);
+        const song = await fetch(`${basepath}/data/songscore.json`);
         const songjson = await song.json();
 
         table.innerHTML += `   

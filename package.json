@@ -6,8 +6,7 @@
   "scripts": {
     "test": "electron .",
     "start": "electron .",
-    "electron": "ng build --base-href ./ && electron .",
-    "build": "electron-packager ./ FNF-Electron --platform=win32 --arch=x64"
+    "build": "electron-packager ./ FNF-Electron --no-prune --app-version='1.0.0' --app-copyright --platform=win32 --arch=x64 --overwrite --icon=icon.ico --prune=true --out=release-builds --executable-name='FNF-Electron' --win32metadata.CompanyName='FNFElectron' --win32metadata.FileDescription='FNFElectron' --win32metadata.ProductName='FNFElectron' --ignore='icon.ico' --ignore='./src/*' --ignore='README.md'"
   },
   "keywords": [
     "electron",
