@@ -1,4 +1,5 @@
 [![Download](https://img.shields.io/github/downloads/Bouftout/FNF-Electron/V1.0.0/total)](https://github.com/Bouftout/FNF-Electron/releases/tag/V1.0.0)
+[![CommitSinceLastRelease](https://img.shields.io/github/commits-since/Bouftout/FNF-Electron/V1.0.0)](https://github.com/Bouftout/FNF-Electron/compare/V1.0.0...master)
 
 ### FNF-Electron
 
@@ -11,9 +12,8 @@ Par contre niveau visuel je promet rien !
 
 ##
 
-<ul>
-<li>Pouvoir les lancer avec un bouton juste en dessous.</li>
-<li>Ajouter des .exe</li>
-<li> Avoir le score de ces jeux</li>
-<li> Pas de style pour l'instant</li>
-</ul>
+
+- Pouvoir les lancer avec un bouton juste en dessous.</li>
+- Ajouter des .exe</li>
+- Avoir le score de ces jeux</li>
+- Pas de style pour l'instant</li>
