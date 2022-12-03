@@ -1,5 +1,7 @@
+[![Download](https://img.shields.io/github/downloads/Bouftout/FNF-Electron/V1.0.0/total)](https://github.com/Bouftout/FNF-Electron/releases/tag/V1.0.0)
+
 ### FNF-Electron
-#
+
 
 Un launcher friday night funkin electron
 Il est actuellement en dev mais je fais ce que je peut avec mes connaisance.
