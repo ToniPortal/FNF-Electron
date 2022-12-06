@@ -1,22 +1,48 @@
-/*CSS COPYRIGHT TONI AND ALAN */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;500;600;700&display=swap');
+/*CSS COPYRIGHT TONI */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;500;600;700&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-navbar>div>button:disabled {
+navbar > div > button:disabled {
   opacity: 0.5;
   color: black;
 }
 
+navbar {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  height: auto;
+  width: 100%;
+  position: sticky;
+  z-index: 3;
+  margin: 0px;
+}
+
+.sticky {
+  background-color: #b1b2ff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+}
+
 body {
-  height: 100vh;
+  height: 100%;
   widows: 100%;
-  background-color: white;
+  /* background-color: #21a3ce; */
+  background-color: #87a2fb;
+}
+
+h1,
+input {
+  margin: 10px 5px;
+  position: static;
 }
 
 .twobutton {
@@ -24,14 +50,27 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  width: 50%;
-  margin-top: 20px;
+  width: 95%;
 }
 
-.box {
-  position: relative;
-  top: 550px;
-  left: 50%;
+.twobutton > button {
+  width: 45%;
+  height: 10%;
+  border: 4px solid #b1b2ff;
+  outline: none;
+  background: #aac4ff;
+  color: black;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.boxN1 {
+  position: absolute;
+  top: 45%;
+  left: 82%;
   width: 400px;
   transform: translate(-50%, -50%);
   padding: 50px;
@@ -39,7 +78,7 @@ body {
   border-radius: 15px;
 }
 
-.box>p {
+.boxN1 > p {
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -47,17 +86,14 @@ body {
   margin-bottom: 20px;
 }
 
-
-.box>h1 {
+.boxN1 > h1 {
   color: rgb(255, 255, 255);
   text-align: center;
   margin-bottom: 30px;
   font-weight: 500;
 }
 
-
-
-.box>form>input {
+.boxN1 > input {
   color: #fff;
   width: 100%;
   padding-top: 25px;
@@ -71,19 +107,123 @@ body {
   outline: none;
 }
 
-.box>form>label {
+.boxN1 > label {
   z-index: -7;
   position: relative;
   color: #ffffff;
   letter-spacing: 1px;
   font-size: 13px;
-  transition: .4s;
+  transition: 0.4s;
+}
+
+.boxN2 {
+  position: absolute;
+  top: 45%;
+  left: 18%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  background: #0e003f;
+  border-radius: 15px;
+}
+
+.boxN2 > p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.boxN2 > h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.boxN2 > h2 {
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.boxN2 > div > input {
+  color: rgb(0, 0, 0);
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+}
+
+.boxN2 > label {
+  z-index: -7;
+  position: relative;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: 13px;
+  transition: 0.4s;
+}
+
+.box {
+  position: relative;
+  top: 550px;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  background: #0e003f;
+  border-radius: 15px;
+}
+
+.box > p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.box > h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.box > form > input {
+  color: #fff;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
+
+.box > form > label {
+  z-index: -7;
+  position: relative;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: 13px;
+  transition: 0.4s;
 }
 
 .box input[type="submit"] {
   border: none;
   outline: none;
-  background: #EEF1FF;
+  background: #eef1ff;
   color: black;
   padding: 8px 20px;
   border-radius: 10px;
@@ -94,25 +234,22 @@ body {
 
 .box input[type="submit"]:hover {
   transform: scale(1.1);
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
-
-
-.box>form>input input:focus~label,
-.box>form>input input:valid~label {
+.box > form > input input:focus ~ label,
+.box > form > input input:valid ~ label {
   top: -20px;
   left: 0;
   color: #ea15bc;
   font-size: 12px;
 }
 
-
-.box>form>div>button {
+.box > form > div > button {
   border: none;
   outline: none;
-  background: #D2DAFF;
+  background: #d2daff;
   color: black;
   padding: 8px 20px;
   border-radius: 10px;
@@ -121,37 +258,16 @@ body {
   letter-spacing: 1px;
 }
 
-.box>form button:hover {
+.box > form button:hover {
   transform: scale(1.1);
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
 }
-
-
-
-navbar {
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-  height: auto;
-  width: 100%;
-  position: sticky;
-  z-index: 3;
-}
-
-.sticky {
-  background-color: #B1B2FF;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 10px;
-}
-
 
 navbar button {
   border: none;
   outline: none;
-  background: #D2DAFF;
+  background: #d2daff;
   color: black;
   font-size: 14px;
   font-weight: bold;
@@ -163,18 +279,15 @@ navbar button {
   display: block;
 }
 
-navbar>div>button {
+navbar > div > button {
   margin: 5px;
   border-radius: 10px;
 }
-
 
 navbar button:hover,
 navbar button:focus {
   color: white;
 }
-
-
 
 navbar div {
   display: flex;
@@ -182,7 +295,7 @@ navbar div {
   justify-content: center;
 }
 
-navbar>div>ul>button {
+navbar > div > ul > button {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -193,10 +306,6 @@ navbar>div>ul>button {
 
 .espace {
   margin: 0 10px;
-}
-
-input:focus {
-  background-color: lightblue;
 }
 
 .searchbar {
@@ -215,50 +324,53 @@ input:focus {
   opacity: 0.3;
 }
 
-
-.allcontent {
-  width: 100%;
-  height: 100%;
-  margin: 10px 1rem;
-  position: static;
-}
-
 .container {
-  width: 80%;
-  height: 100%;
   margin-top: 1rem;
-  position: static;
+  margin-left: 1rem;
+  border: 1px solid black;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 95%;
 }
 
-.container button {
+.container>button {
   border: none;
   outline: none;
-  background: #AAC4FF;
+  background: #aac4ff;
   color: black;
   padding: 8px 20px;
-
+  height: 50px;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
   width: 100%;
+  text-align: center;
 }
 
-input[type=search] {
+input[type="search"] {
   transition: width 0.4s ease-in-out;
 }
 
-input[type=search]:focus {
-  width: 100%;
+input[type="search"]:focus {
+  width: 80%;
+  background-color: whitesmoke;
 }
 
-input[type=search] {
-  width: 100%;
+input[type="search"] {
+  width: 40%;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
-  background-image: url('../img/searchicon.png');
+  background-image: url("../img/searchicon.png");
   background-position: 4px 4px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
@@ -273,14 +385,14 @@ table {
 }
 
 th {
-  background-color: #D2DAFF;
+  background-color: #d2daff;
   color: black;
   border: 1px solid grey;
   padding: 10px;
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2
+  background-color: #f2f2f2;
 }
 
 tr {
@@ -293,7 +405,6 @@ td {
   padding: 10px;
 }
 
-
 .actifsearch {
   opacity: 0.5;
   color: #4144ff;
@@ -304,14 +415,13 @@ td {
   width: 600px;
   z-index: 999;
   display: none;
-  top: 30%;
+  top: 50%;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 2px 8px #aaa;
   overflow: hidden;
   padding: 10px;
-  display: none;
   animation-name: toleft;
   animation-duration: 1s;
   animation-timing-function: ease;
@@ -322,7 +432,7 @@ td {
   margin-top: 20px;
   border: none;
   outline: none;
-  background: #D2DAFF;
+  background: #d2daff;
   color: black;
   padding: 8px 20px;
   border-radius: 10px;
@@ -337,6 +447,34 @@ td {
 }
 
 @keyframes toleft {
-  from {left: 0%;}
-  to {left: 24rem;}
+  from {
+    left: 0%;
+  }
+
+  to {
+    left: 24rem;
+  }
+}
+
+.none {
+  display: none;
+}
+
+body > div > div > #pokemonp1 {
+  display: inline;
+  float: right;
+  text-align: left;
+}
+
+body > div > div > #pokemonp1 {
+  display: inline;
+  float: left;
+  text-align: right;
+}
+
+progress {
+  width: 30%;
+  height: 20px;
+  background-color: #d2daff;
+  border: 1px solid black;
 }
